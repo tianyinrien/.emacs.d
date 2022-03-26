@@ -1,0 +1,23 @@
+
+;; ----- amx-history -----
+(
+ describe-font
+ flyspell-mode
+ display-line-numbers-mode
+ comment-region
+ all-the-icons-install-fonts
+ package-install
+ math-symbols-insert
+)
+
+;; ----- amx-data -----
+(
+ (all-the-icons-install-fonts . 15)
+ (comment-region . 3)
+ (package-install . 2)
+ (math-symbols-insert . 2)
+ (toggle-proxy . 5)
+ (describe-font . 7)
+ (display-line-numbers-mode . 1)
+ (flyspell-mode . 3)
+)
