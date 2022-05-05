@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tikzcd
+# key: tikzcd
+# --
+\begin{tikzcd}
+   ($1) \ar[r, "peGH"] \ar[d] & ($2) \ar[d] \\
+   ($3) \ar[r,"GH"]  &  ($4)
+\end{tikzcd}

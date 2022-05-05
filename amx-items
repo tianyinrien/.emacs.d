@@ -1,23 +1,38 @@
 
 ;; ----- amx-history -----
 (
- describe-font
- flyspell-mode
- display-line-numbers-mode
- comment-region
- all-the-icons-install-fonts
- package-install
- math-symbols-insert
+ list-colors-display
+ read-color
+ dired
+ describe-mode
+ describe-package
+ clipboard-yank
+ toggle-frame-fullscreen
 )
 
 ;; ----- amx-data -----
 (
  (all-the-icons-install-fonts . 15)
  (comment-region . 3)
- (package-install . 2)
+ (package-install . 3)
  (math-symbols-insert . 2)
  (toggle-proxy . 5)
- (describe-font . 7)
+ (describe-font . 9)
  (display-line-numbers-mode . 1)
  (flyspell-mode . 3)
+ (clipboard-yank . 26)
+ (battery . 2)
+ (sml/setup . 4)
+ (package-reinstall . 1)
+ (dired . 3)
+ (yas-new-snippet . 5)
+ (yas-visit-snippet-file . 1)
+ (toggle-frame-fullscreen . 3)
+ (sml/customize . 2)
+ (unicode-math-input . 1)
+ (package-delete . 1)
+ (describe-package . 1)
+ (describe-mode . 1)
+ (read-color . 1)
+ (list-colors-display . 1)
 )

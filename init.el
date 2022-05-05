@@ -30,7 +30,7 @@
  ;; If there is more than one, they won't work right.
  '(LaTeX-amsmath-label "eq:")
  '(LaTeX-math-abbrev-prefix "'")
- '(LaTeX-math-list '((49 LaTeX-math-bb "" nil)) t)
+ '(LaTeX-math-list '((49 LaTeX-math-bb "" nil)))
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
@@ -91,6 +91,8 @@
  '(package-selected-packages
    '(math-symbols company-box all-the-icons-dired all-the-icons-ivy all-the-icons-ivy-rich all-the-icons ivy-rich amx dashboard flyspell-correct sx org-bullets smart-mode-line powerline doom-themes counsel swiper browse-kill-ring avy fzf yasnippet-snippets pdf-tools smartparens yasnippet math-symbol-lists company-math company ivy which-key auctex))
  '(scroll-bar-mode nil)
+ '(sml/mode-width 36)
+ '(sml/name-width 30)
  '(tool-bar-mode nil))
 (display-battery-mode)
 
@@ -117,7 +119,7 @@
 ; font and modeline
 (sml/setup)
 (sml/apply-theme 'respectful)
-(set-frame-font "-ADBO-Source Code Pro-normal-normal-normal-*-35-*-*-*-m-0-iso10646-1")
+(set-frame-font "-PfEd-Hurmit Nerd Font Mono-normal-normal-normal-*-33-*-*-*-m-0-iso10646-1")
 ; fullscreen
 ;(toggle-frame-fullscreen)
 ; save place auto
@@ -269,9 +271,9 @@
 (add-hook 'company-mode-hook 'company-box-mode)
 
 (add-to-list 'company-box-frame-parameters
-             '(font . "-ADBO-Source Code Pro-normal-normal-normal-*-33-*-*-*-m-0-iso10646-1"))
+             '(font . "-PfEd-Hurmit Nerd Font Mono-normal-normal-normal-*-33-*-*-*-m-0-iso10646-1"))
 (add-to-list 'company-box-frame-parameters
-               '(font-parameter . "-ADBO-Source Code Pro-normal-normal-normal-*-33-*-*-*-m-0-iso10646-1"))
+               '(font-parameter . "-PfEd-Hurmit Nerd Font Mono-normal-normal-normal-*-33-*-*-*-m-0-iso10646-1"))
 (add-to-list 'company-box-frame-parameters
                '(border-width . 2))
 (add-to-list 'company-box-frame-parameters
@@ -299,25 +301,25 @@
 
 
 ; org-config
-(setq org-directory "~/ownCloud/Documents/gtd")
-(setq org-agenda-files '( "~/ownCloud/Documents/gtd/gtd.org" ))
+(setq org-directory "~/Nextcloud/Documents/gtd")
+(setq org-agenda-files '( "~/Nextcloud/Documents/gtd/gtd.org" ))
 
 (setq org-capture-templates
-      '(("i" "Todo [inbox]" entry (file "~/ownCloud/Documents/gtd/inbox.org")
+      '(("i" "Todo [inbox]" entry (file "~/Nextcloud/Documents/gtd/inbox.org")
          "* TODO %i%?\n %U")
-	("s" "Todo [proj]" entry (file "~/ownCloud/Documents/gtd/gtd.org")
+	("s" "Todo [proj]" entry (file "~/NextcloudDocuments/gtd/gtd.org")
          "* TODO %i%?\n %U")
-	("d" "Todo [doing]" entry (file "~/ownCloud/Documents/gtd/gtd.org")
+	("d" "Todo [doing]" entry (file "~/Nextcloud/Documents/gtd/gtd.org")
          "* TODO Daily Doing %i%?\n ")
-	("t" "Tickler" entry (file "~/ownCloud/Documents/gtd/tickler.org")
+	("t" "Tickler" entry (file "~/Nextcloud/Documents/gtd/tickler.org")
 	 "* TODO %i%?\n %U")))
 
 
 
 (add-hook 'org-capture-mode-hook 'delete-other-windows)
 (setq org-refile-use-outline-path t)
-(setq org-refile-targets '(("~/ownCloud/Documents/gtd/gtd.org" :maxlevel . 2)
-                           ("~/ownCloud/Documents/gtd/tickler.org" :maxlevel . 2)))
+(setq org-refile-targets '(("~/Nextcloud/Documents/gtd/gtd.org" :maxlevel . 2)
+                           ("~/Nextcloud/Documents/gtd/tickler.org" :maxlevel . 2)))
 
 (setq org-agenda-breadcrumbs-separator "=>")
 (setq org-agenda-prefix-format
@@ -383,5 +385,4 @@
 ;;  (setq scihub-homepage "https://sci-hub.se")
 ;;  (add-to-list 'load-path "/Users/Ren/.emacs.d/lisp/scihub")
 ;;  (require 'scihub)
-
 
